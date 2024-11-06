@@ -1,0 +1,15 @@
+[data-scope="field"][data-part="root"] {
+    @apply flex flex-col gap-1;
+}
+
+[data-scope="field"][data-part="label"] {
+    @apply px-0.5 font-semibold text-xs text-neutral-600;
+}
+
+[data-scope="field"][data-part="input"] {
+    @apply min-h-9 px-4 py-1.5 rounded-lg outline-none border border-neutral-300 hover:border-neutral-400 focus:border-primary focus:ring-1 focus:ring-offset-1 focus:ring-analogous text-sm text-neutral-700 transition-all;
+}
+
+[data-scope="field"][data-part="helper-text"] {
+    @apply px-0.5 text-xs text-neutral-500;
+}

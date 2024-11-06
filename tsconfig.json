@@ -1,0 +1,30 @@
+{
+  "compilerOptions": {
+    "target": "ESNext",
+    "module": "ESNext",
+    "moduleResolution": "bundler",
+    "jsx": "preserve",
+    "jsxImportSource": "solid-js",
+    "declaration": true,
+    "declarationDir": "dist",
+    "esModuleInterop": true,
+    "skipLibCheck": true,
+    "strict": true,
+    "forceConsistentCasingInFileNames": true,
+    "allowSyntheticDefaultImports": true,
+    "isolatedModules": true,
+    "allowJs": true,
+    "outDir": "dist",
+    "paths": {
+      "@lib/*": [
+        "./lib/*"
+      ]
+    }
+  },
+  "include": [
+    "lib"
+  ],
+  "exclude": [
+    "node_modules"
+  ]
+}
