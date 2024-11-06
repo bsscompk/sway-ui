@@ -14,7 +14,7 @@ export default {
         ({ addComponents }) => {
             addComponents({
                 ":root": {
-                    "--color-primary": "#216b52",
+                    "--color-primary": "#0b7659",
                     "--color-analogous": "#34a95c",
                 },
             });
