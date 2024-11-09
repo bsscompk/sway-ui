@@ -1,33 +1,12 @@
 {
-  "name": "@bsscompk/sway-ui",
-  "version": "0.1.0",
-  "description": "Sway UI is a lightweight, accessible UI kit offering a modern and cohesive design.",
-  "publishConfig": {
-    "access": "public"
-  },
-  "type": "module",
-  "main": "dist/index.jsx",
-  "module": "dist/index.jsx",
-  "types": "dist/index.d.js",
-  "files": [
-    "dist"
+  "name": "sway-ui",
+  "license": "MIT",
+  "workspaces": [
+    "packages/*",
+    "preview"
   ],
   "scripts": {
-    "build": "tsup"
-  },
-  "license": "MIT",
-  "devDependencies": {
-    "autoprefixer": "^10.4.20",
-    "esbuild-plugin-solid": "^0.6.0",
-    "postcss": "^8.4.47",
-    "tailwindcss": "^3.4.14",
-    "tsup": "^8.3.5",
-    "typescript": "^5.6.3"
-  },
-  "peerDependencies": {
-    "solid-js": "^1.8.11"
-  },
-  "dependencies": {
-    "@ark-ui/solid": "^4.3.0"
+    "lib:build": "pnpm -C packages/sway-ui build",
+    "preview:dev": "pnpm -C preview dev"
   }
 }
