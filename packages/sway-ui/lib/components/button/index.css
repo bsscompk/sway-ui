@@ -1,5 +1,5 @@
 @import "../../tailwind.css";
 
 [data-scope="button"][data-part="root"] {
-    @apply min-w-24 min-h-9 w-full flex justify-center items-center px-4 py-1 rounded-full outline-none focus:ring-1 focus:ring-offset-1 focus:ring-analogous bg-primary font-medium text-sm text-white hover:brightness-95 active:brightness-90;
+    @apply min-w-24 min-h-9 w-full flex justify-center items-center px-4 py-1 rounded-full outline-none focus:ring-1 focus:ring-offset-1 focus:ring-analogous bg-primary disabled:bg-neutral-200 font-medium text-sm text-white disabled:text-neutral-400 hover:enabled:brightness-95 active:enabled:brightness-90;
 }

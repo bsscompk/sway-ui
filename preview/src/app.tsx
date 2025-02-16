@@ -19,13 +19,13 @@ const App = () => {
                     By submitting you agree to our <a href=".">Terms and Conditions</a>.
                 </Checkbox>
                 <br />
-                <PinField length={8} />
+                <PinField label="Verification Code" length={8} />
                 <br />
-                <PasswordField />
+                <PasswordField label="Current Password" />
                 <br />
-                <PasswordField />
+                <PasswordField label="New Password" />
                 <br />
-                <PasswordField />
+                <PasswordField label="Confirm Password" name="confirm-pass" placeholder="Confirm password" />
                 <br />
                 <A>Hello, World</A>
                 <P>
@@ -36,6 +36,10 @@ const App = () => {
                     with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop
                     publishing software like Aldus PageMaker including versions of Lorem Ipsum.
                 </P>
+                <br />
+                <Button type="submit" disabled>
+                    Click me!
+                </Button>
                 <br />
                 <Button type="submit">Click me!</Button>
             </form>
