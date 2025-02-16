@@ -13,7 +13,7 @@
 }
 
 [data-scope="field"][data-part="input"] {
-    @apply min-h-9 w-full px-4 py-1.5 rounded-lg outline-none border border-neutral-300 hover:enabled:not-focus:border-neutral-400 focus:border-primary focus:ring-1 focus:ring-offset-1 focus:ring-analogous text-sm text-neutral-700 transition-all;
+    @apply min-h-9 w-full px-4 py-1.5 rounded-lg outline-none border border-neutral-300 hover:enabled:not-focus:border-neutral-400 focus:border-primary focus:ring-1 focus:ring-offset-1 focus:ring-analogous disabled:bg-neutral-100 text-sm text-neutral-700 transition-all;
 }
 
 [data-scope="field"][data-part="password-visibility"] {

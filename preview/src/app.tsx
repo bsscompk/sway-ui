@@ -23,7 +23,7 @@ const App = () => {
                 <br />
                 <PasswordField label="Current Password" />
                 <br />
-                <PasswordField label="New Password" />
+                <PasswordField label="New Password" disabled />
                 <br />
                 <PasswordField label="Confirm Password" name="confirm-pass" placeholder="Confirm password" />
                 <br />
