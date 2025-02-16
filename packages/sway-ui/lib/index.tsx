@@ -1,3 +1,5 @@
 export { Button } from "@lib/components/button";
 
-export { TextField } from "@lib/components/input";
+export { TextField, PasswordField, Checkbox, PinField } from "@lib/components/input";
+
+export { P, A } from "@lib/components/typography";

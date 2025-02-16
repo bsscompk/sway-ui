@@ -1,6 +1,16 @@
 @import "tailwindcss";
 
 @theme {
-    --color-primary: #0b7659;
-    --color-analogous: #34a95c;
+    --color-primary: oklch(0.453 0.177 179.44);
+    --color-analogous: oklch(0.593 0.21 145.55);
+}
+
+@layer base {
+    a {
+        @apply text-primary hover:underline;
+    }
+
+    p {
+        @apply text-neutral-700;
+    }
 }

@@ -8,10 +8,62 @@
     @apply px-0.5 font-semibold text-xs text-neutral-600;
 }
 
+[data-scope="field"][data-part="control"] {
+    @apply relative;
+}
+
 [data-scope="field"][data-part="input"] {
-    @apply min-h-9 px-4 py-1.5 rounded-lg outline-none border border-neutral-300 hover:border-neutral-400 focus:border-primary focus:ring-1 focus:ring-offset-1 focus:ring-analogous text-sm text-neutral-700 transition-all;
+    @apply min-h-9 w-full px-4 py-1.5 rounded-lg outline-none border border-neutral-300 hover:enabled:not-focus:border-neutral-400 focus:border-primary focus:ring-1 focus:ring-offset-1 focus:ring-analogous text-sm text-neutral-700 transition-all;
+}
+
+[data-scope="field"][data-part="password-visibility"] {
+    @apply absolute right-2 top-1/2 transform -translate-y-1/2 flex justify-center items-center p-px cursor-pointer;
+}
+
+[data-scope="field"][data-part="password-visibility"] svg {
+    @apply w-5 h-5 p-px;
 }
 
 [data-scope="field"][data-part="helper-text"] {
     @apply px-0.5 text-xs text-neutral-500;
+}
+
+[data-scope="pin-input"] input[data-part="root"] {
+    @apply flex flex-col gap-2;
+}
+
+[data-scope="pin-input"][data-part="label"] {
+    @apply px-0.5 font-semibold text-xs text-neutral-600;
+}
+
+[data-scope="pin-input"] div[data-part="control"] {
+    @apply flex gap-2;
+}
+
+[data-scope="pin-input"] div[data-part="control"] input {
+    @apply min-w-4 min-h-9 w-full flex p-1.5 rounded-lg outline-none border border-neutral-300 hover:enabled:not-focus:border-neutral-400 focus:border-primary focus:ring-1 focus:ring-offset-1 focus:ring-analogous text-sm text-center text-neutral-700 transition-all;
+}
+
+[data-scope="checkbox"][data-part="root"] {
+    @apply flex items-center gap-2 select-none;
+}
+
+[data-scope="checkbox"][data-part="label"] {
+    @apply text-sm text-neutral-700;
+}
+
+[data-scope="checkbox"][data-part="control"] {
+    @apply min-w-4 min-h-4 w-4 h-4 flex justify-center items-center rounded-sm outline-none border border-neutral-300 hover:border-neutral-400 hover:cursor-pointer transition-all;
+}
+
+[data-scope="checkbox"][data-part="control"][data-state="checked"] {
+    @apply bg-primary border-primary;
+}
+
+[data-scope="checkbox"][data-part="indicator"] svg {
+    @apply w-4 h-4 p-px stroke-white;
+}
+
+[data-scope="checkbox"] input[type="checkbox"] {
+    @apply absolute opacity-0 pointer-events-none;
 }
